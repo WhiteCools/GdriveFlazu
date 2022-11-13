@@ -10,7 +10,7 @@ const { exec } = require("child_process");
 
 const configLoader = require("./config-loader.js");
 configLoader.load();
-const token = "5632462372:AAG5te_W9dOuaXAAnmB7qlXKkg3fkleC5OQ";
+const token = config.BOT_TOKEN;
 if(!token) { console.log("FATAL:\tBot Token not found in config file."); process.exit(1); }
 
 
